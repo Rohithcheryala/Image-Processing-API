@@ -1,0 +1,6 @@
+**/__pycache__/
+*.pyc
+# Ignore the data directory
+/data/*
+dump.rdb
+image_processing.db
