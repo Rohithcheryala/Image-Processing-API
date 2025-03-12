@@ -65,13 +65,19 @@ brew install redis
 
 ## Running the Application
 
-1. Start the FastAPI server:
+1. Start redis-server
+
+```bash
+redis-server
+```
+
+2. Start the FastAPI server:
 
 ```bash
 python -m app.main
 ```
 
-2. Start Celery worker:
+3. Start Celery worker:
 
 ```bash
 celery -A celery_app worker --loglevel=info
